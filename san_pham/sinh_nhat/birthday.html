@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="asset/css/resset.css" />
+    <link rel="stylesheet" href="asset/css/style.css" />
+    <link rel="stylesheet" href="asset/css/animation_open_3D.css" />
+    <link rel="stylesheet" href="asset/css/card_model.css" />
+    <title>Happybirthday</title>
+  </head>
+  <body>
+    <div class="letter_frame">
+      <div class="card" id="birthdayCard">
+        <div class="cover" onclick="toggleCard()">
+          <div class="cover-front frame-right">
+            <div class="happy-birtday-frame Flex_center">
+              <div class="card-frame text-frame Flex_center">
+                <p class="beautiful-text">
+                  Happy birthday <br />
+                  to your best friend! 🎉🎂
+                </p>
+              </div>
+            </div>
+            <div class="open-frame">
+              <p class="beautiful-text set-position-open">open</p>
+              <p class="set-position-open back-note"></p>
+            </div>
+            <div class="birthday-cake-frame">
+              <div class="birthday-cake Flex_j_center">
+                <i class="fire"></i>
+                <img
+                  src=".\asset\img\candle.png"
+                  alt=""
+                  class="card-cake candle light"
+                />
+
+                <img src=".\asset\img\cake.png" alt="" class="card-cake cake" />
+                <p
+                  class="beautiful-text light note-click frame-click font-text-GV set-position"
+                  onclick="AddAtributeCandle()"
+                >
+                  click me
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="cover-back">
+            <div class="frame-left">
+              <div class="img-memory">
+                <img
+                  src=".\asset\img\z7956010175773_2ce00348840035db4ac01de726236f8f.jpg"
+                  alt=""
+                />
+                <div class="paperclip"></div>
+                <div class="time-img-memory">
+                  <p class="">27-10-2020 📬</p>
+                </div>
+              </div>
+              <div class="content-frame">
+                <p class="beautiful-text under-model light">
+                  Memorable moments
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="inside-right">
+          <div class="frame-right">
+            <div class="content-main-frame">
+              <p class="beautiful-text">
+                Gửi người bạn thân nhất <br />tuyệt vời nhất
+              </p>
+              <p class="beautiful-text">
+                <br /><br />
+                Chúc mừng sinh nhật! Chúc bạn một tuổi mới tràn đầy niềm vui,
+                sức khỏe và hạnh phúc. Cảm ơn vì tất cả những kỷ niệm tuyệt vời
+                'Memorable moments' mà chúng ta đã cùng nhau chia sẻ. Chúc bạn
+                luôn xinh đẹp, yêu đời và đạt được mọi ước mơ.
+              </p>
+              <p class="beautiful-text under-model light set-position-name">
+                Naomizz ye
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script>
+    function toggleCard() {
+      const card = document.getElementById("birthdayCard");
+      card.classList.toggle("open");
+      // if (card.classList.contains("open")) {
+      //   card.classList.remove("open");
+      // } else {
+      //   card.classList.add("open");
+      // }
+    }
+    function AddAtributeCandle() {
+      event.stopPropagation();
+      const candle = document.querySelector(".candle");
+      const click = document.querySelector(".note-click");
+      const cake = document.querySelector(".cake");
+      const note = document.querySelector(".open-frame");
+      const fire = document.querySelector(".fire");
+      candle.style.display = "block";
+      setTimeout(() => {
+        candle.style.marginTop = "55px";
+      }, 80);
+      cake.style.display = "block";
+      click.style.display = "none";
+      note.style.display = "block";
+
+      setTimeout(() => {
+        fire.style.display = "block";
+      }, 2000);
+    }
+  </script>
+</html>

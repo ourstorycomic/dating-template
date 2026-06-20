@@ -1,0 +1,166 @@
+/* ==========================================================================
+   MODERN & COMPLETE CSS RESET (BẢN ĐẦY ĐỦ NHẤT)
+   ========================================================================== */
+
+/* --- 1. BOX MODEL & CORE RESET --- */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* --- 2. HTML & BODY RESET --- */
+html {
+  height: 100%;
+  scroll-behavior: smooth; /* Cuộn trang mượt mà */
+  -webkit-text-size-adjust: 100%; /* Chống tự động đổi cỡ chữ trên iOS */
+  -moz-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+}
+
+body {
+  min-height: 100%;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased; /* Chữ mượt hơn trên Mac/iOS */
+  -moz-osx-font-smoothing: grayscale;
+  line-height: 1.5;
+  /* Font chữ mặc định hiện đại, dễ nhìn */
+  font-family:
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    Roboto,
+    Oxygen,
+    Ubuntu,
+    Cantarell,
+    "Open Sans",
+    "Helvetica Neue",
+    sans-serif;
+}
+
+/* --- 3. HTML5 BLOCK-LEVEL ELEMENTS RESET --- */
+/* Đảm bảo các thẻ HTML5 luôn hiển thị dạng khối chuẩn */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+main {
+  display: block;
+}
+
+/* --- 4. TYPOGRAPHY RESET (TIÊU ĐỀ & CHỮ) --- */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: scale-down;
+  font-weight: normal; /* Đưa về chữ thường, bạn tự set bold sau */
+}
+
+p,
+th,
+td,
+li,
+dt,
+dd {
+  overflow-wrap: break-word; /* Chống tràn chữ khi chuỗi quá dài */
+}
+
+/* --- 5. LINKS & LISTS (DANH SÁCH & ĐƯỜNG DẪN) --- */
+a {
+  text-decoration: none;
+  color: inherit; /* Không bị màu xanh mặc định của trình duyệt */
+  background-color: transparent;
+}
+
+ul,
+ol,
+menu {
+  list-style: none; /* Bỏ dấu chấm tròn/số mặc định */
+}
+
+/* --- 6. EMBEDDED MEDIA (HÌNH ẢNH & VIDEO) --- */
+img,
+picture,
+video,
+canvas,
+svg,
+iframe {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/* Loại bỏ viền mặc định của ảnh nằm trong thẻ a trên IE */
+img {
+  border-style: none;
+}
+
+/* --- 7. FORMS & BUTTONS (NÚT VÀ Ô NHẬP LIỆU) --- */
+input,
+button,
+textarea,
+select {
+  font: inherit; /* Thừa hưởng font từ body */
+  color: inherit;
+  background: transparent;
+  border: none;
+  outline: none;
+}
+
+/* Đưa nút bấm về dạng click được và có hiệu ứng con trỏ pointer */
+button,
+[type="button"],
+[type="reset"],
+[type="submit"] {
+  cursor: pointer;
+  -webkit-appearance: button; /* Sửa lỗi hiển thị trên iOS */
+}
+
+button:disabled,
+input:disabled {
+  cursor: not-allowed; /* Đổi con trỏ khi nút bị khóa */
+}
+
+/* Khóa tính năng kéo giãn tự do của textarea (chỉ cho kéo lên xuống) */
+textarea {
+  resize: vertical;
+}
+
+/* --- 8. TABLES (BẢNG) --- */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 100%;
+}
+
+/* --- 9. MISC (CÁC THẺ KHÁC) --- */
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote::before,
+blockquote::after,
+q::before,
+q::after {
+  content: "";
+  content: none;
+}
+
+/* Định dạng lại thẻ ẩn */
+[hidden] {
+  display: none !important;
+}
