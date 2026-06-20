@@ -1,0 +1,13 @@
+:root{
+    --dark-theme-color: white;
+    --light-theme-color: black;
+}
+
+/* *{box-sizing: border-box;} */
+html{
+    font-size: 62.5%;
+    font-family: 'Dancing Script', sans-serif;
+}
+.bg{width: 100%;}
+a{text-decoration: none;}
+/* .border_box{border: 1px solid var(--light-theme-color);} */

@@ -1,0 +1,28 @@
+/* header the combo */
+#header_navbar_menu>a:hover{
+    cursor: pointer;
+    background-color: pink;
+    box-shadow: 0 0 100px 0 rgba(255, 192, 203, 0.514);
+    color: black;
+    transition: 0.3s;
+}
+#header_textContent>button:hover{cursor: pointer;}
+
+/* storyline the combo */
+#storyline_mainContent:hover{
+    cursor: grab;
+}
+
+/* vacation the combo */
+#vacation>div:first-of-type>button:hover{
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.548);
+    border: 1px solid transparent;
+    transition: 0.3s;
+}
+.vacation_mainContent_location:hover{
+    cursor: pointer;
+    scale: 1.05;
+    transition: 0.5s;
+    opacity: 1;
+}

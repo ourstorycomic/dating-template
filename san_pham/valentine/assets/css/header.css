@@ -1,0 +1,69 @@
+.header_bg{
+    background-image: url(https://cdn-media.sforum.vn/storage/app/media/ctv_seo10/cac-ngay-valentine-thumbnail.jpg);
+    background-size: cover;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 10px;
+    padding-bottom: 30px;
+    background: linear-gradient( rgba(0, 0, 0, 0.8), transparent);
+    color: white;
+}
+#header_navbar_menu{
+    width: 50%;
+    padding: 20px;
+    border-radius: 15px;
+    display: flex;
+    justify-content: space-around;
+}
+#header_navbar_menu>a{
+    width: 20%;
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 3rem;
+    display: flex;
+    align-items: center;
+    /* justify-content: space-around; */
+    gap: 20px;
+    color: papayawhip;
+}
+
+#header_textContent{
+    justify-self: center;
+    margin-top: 300px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background-color: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(15px);
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    position: relative;
+}
+#header_textContent *{
+    text-align: center;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 0;
+    color: white;
+}
+#header_textContent>h1{font-size: 7rem;}
+#header_textContent>h3{font-size: 3rem;}
+#header_textContent>button{
+    position: absolute;
+    width: 70px;height: 70px;
+    border-radius: 50%;
+    border: 0;
+    font-size: 40px;
+    color: red;
+    background-color: pink;
+    left: calc(50% - 40px);
+    top: -35px;
+}
+
+header{box-shadow: inset 0 0 1000px 150px rgba(0, 0, 0, 0.8);}

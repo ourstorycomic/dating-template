@@ -1,0 +1,51 @@
+.storyline_bg{background: linear-gradient(white, pink);padding-bottom: 100px;}
+#storyline>h1{
+    padding-top: 100px;
+    color: black;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    justify-self: center;
+}
+#storyline>h1>ion-icon:first-of-type{transform: rotate(-90deg);color: red;}
+#storyline>h1>ion-icon:last-of-type{transform: rotate(90deg);color: red;}
+#storyline>h3{
+    max-width: 40%;
+    justify-self: center;
+    margin-top: 40px;
+}
+#storyline_mainContent{
+    margin-top: 40px;
+    background: linear-gradient(white, pink);
+    width: 90%;
+    height: 500px;
+    border-radius: 50px;
+    box-shadow: inset 0 0 10px 10px rgba(0, 0, 0, 0.3);
+    justify-self: center;
+}
+#storyline_mainContent_detail{
+    width: 50%; height: 100%;
+    justify-self: end;
+    background: linear-gradient(to right, transparent, rgba(0, 0, 0, 0.685));
+    border-radius: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+#storyline_mainContent_detail>div{
+    width: 80%; height: 50%;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+#storyline_mainContent_detail>div>img{
+    display: inline-block;
+    width: 50%; height: 50%;
+    background-color: blue;
+}
+#storyline_mainContent_detail>hr{width: 50%;justify-self: center;}
+#storyline_mainContent_detail>p{
+    max-width: 80%;
+    margin-top: 10px;
+}
