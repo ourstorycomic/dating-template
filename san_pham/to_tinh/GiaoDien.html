@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>tỏ tình</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <div id="app">
+
+    <!-- man hinh 1 -->
+    <div class="box1 active" id="s0">
+      <div class="box2">
+        <div class="chu_to">🌸</div>
+        <div class="tieu_de">Có một điều mình muốn nói</div>
+        <p class="chu_nho">Bạn rảnh 1 chút không? Mình có chuyện muốn nói.</p>
+        <div class="nhom_nut">
+          <button class="nut1" onclick="go(1)">Ừ, nói đi</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="box1" id="s1">
+      <div class="box2">
+        <div class="chu_to">💭</div>
+        <div class="tieu_de">Mình thích bạn</div>
+        <p class="chu_nho">Thật ra mình để ý bạn từ lâu rồi á. Giờ mới dám nói nè.</p>
+        <div class="nhom_nut">
+          <button class="nut1" onclick="go(2)">tiếp theo</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="box1" id="s2">
+      <div class="box2">
+        <div class="chu_to">🥹</div>
+        <div class="tieu_de">Bạn nghĩ sao</div>
+        <p class="chu_nho">Mình biết kiểu đột ngột ghê á nhưng mình muốn hỏi thật lòng 1 câu thôi</p>
+        <div class="nhom_nut">
+          <button class="nut1" onclick="sayYes()">mình cũng vậy</button>
+          <button class="nut2" id="no-btn" onclick="runAway()">mình chưa biết</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="box1" id="s3">
+      <div class="box2">
+        <div class="chu_to">☕</div>
+        <div class="tieu_de">đi uống gì hong</div>
+        <p class="chu_nho">bạn thích uống gì</p>
+
+        <div class="luoi_chon">
+          <button class="o_chon" data-group="drink" onclick="pick(this,'drink')">
+            <span class="icon">🧋</span><span class="ten">Trà sữa</span>
+          </button>
+          <button class="o_chon" data-group="drink" onclick="pick(this,'drink')">
+            <span class="icon">☕</span><span class="ten">Cà phê</span>
+          </button>
+          <button class="o_chon" data-group="drink" onclick="pick(this,'drink')">
+              <span class="icon">🍵</span><span class="ten">Matcha</span>
+          </button>
+          <button class="o_chon" data-group="drink" onclick="pick(this,'drink')">
+            <span class="icon">🥤</span><span class="ten">Nước ép</span>
+          </button>
+        </div>
+
+        <div class="nhom_nut">
+          <button class="nut1" id="drink-next" style="display:none" onclick="go(4)">tiếp theo</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="box1" id="s4">
+      <div class="box2">
+        <div class="chu_to">🗓️</div>
+        <div class="tieu_de">khi nào thì rảnh</div>
+        <p class="chu_nho">bạn rảnh lúc nào trong tuần này v</p>
+
+        <div class="luoi_chon">
+          <button class="o_chon" data-group="time" onclick="pick(this,'time')">
+            <span class="icon">🌅</span><span class="ten">Sáng thứ 7</span>
+          </button>
+          <button class="o_chon" data-group="time" onclick="pick(this,'time')">
+            <span class="icon">🌤️</span><span class="ten">Chiều thứ 7</span>
+          </button>
+          <button class="o_chon" data-group="time" onclick="pick(this,'time')">
+            <span class="icon">🌞</span><span class="ten">Sáng CN</span>
+          </button>
+          <button class="o_chon" data-group="time" onclick="pick(this,'time')">
+            <span class="icon">🌆</span><span class="ten">Chiều CN</span>
+          </button>
+        </div>
+
+        <div class="nhom_nut">
+          <button class="nut1" id="time-next" style="display:none" onclick="go(5)">xong rồi</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="box1" id="s5">
+      <div class="box2">
+        <div class="chu_to">🎉</div>
+        <div class="tieu_de">Hẹn gặp bạn nhé</div>
+        <div class="cau_ket" id="final-msg"></div>
+        <div class="hang_tag" id="tag-row"></div>
+        <p class="chu_nho">cảm ơn bạn vì đã cho mình cơ hội này :)</p>
+      </div>
+    </div>
+
+    <div class="box1" id="s_shy">
+      <div class="box2">
+        <div class="chu_to">🙂</div>
+        <div class="tieu_de">không sao đâu</div>
+        <p class="chu_nho">bạn cứ từ từ suy nghĩ, mình vẫn ở đây khi nào bạn sẵn sàng</p>
+        <div class="nhom_nut">
+          <button class="nut1" onclick="go(2)">để mình nghĩ lại</button>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+<script src="script.js"></script>
+</body>
+</html>
